@@ -21,29 +21,33 @@
 3. Add the following to your `.env` file:
 
 
-🚀 Deployment on Hugging Face Spaces
+## 🚀 Deployment on Hugging Face Spaces
 
-Create a Hugging Face account: huggingface.co
-.
+1. **Create a Hugging Face account**  
+   Visit [huggingface.co](https://huggingface.co) and sign up.
 
-Generate an Access Token with WRITE permissions.
+2. **Generate an Access Token**  
+   Make sure it has **WRITE permissions**.
 
-Install the Hugging Face CLI tool:
+3. **Install the Hugging Face CLI tool**  
+   In your terminal, run:
 
-uv tool install "huggingface_hub[cli]"
-hf auth login
-hf auth whoami
+   ```bash
+   uv tool install "huggingface_hub[cli]"
+   hf auth login
+   hf auth whoami
+Add your token to .env
 
-
-Add your token to .env:
-
+bash
+Copy code
 HF_TOKEN=hf_xxx
+Deploy your app
+From the 1_foundations folder, run:
 
-
-From the 1_foundations folder, deploy your app:
-
+bash
+Copy code
 uv run gradio deploy
-
+Follow the prompts:
 
 Space name: career_conversation
 
@@ -56,25 +60,23 @@ Secrets: Yes → add OPENAI_API_KEY, PUSHOVER_USER, PUSHOVER_TOKEN
 GitHub Actions: No
 
 🔑 Secrets Management
-
 Enter secrets as key-value pairs during deployment:
 
+makefile
+Copy code
 OPENAI_API_KEY: sk-...
 PUSHOVER_USER: u-...
 PUSHOVER_TOKEN: a-...
-
-
 Or manage them later on Hugging Face:
 
 Avatar → Profile → Select Space → ⚙ Settings → Variables & Secrets
 
 ✅ Example Space
-
 See a deployed example: Career Conversation Space
 
 🔄 Redeploy / Reset
+Delete the auto-generated README.md in the career_conversation folder before redeploying.
 
-Delete auto-generated README.md in the career_conversation folder before redeploying.
+To delete the Space:
 
-To delete the Space: Hugging Face → Profile → Space → ⚙ Settings → Delete.
-
+Hugging Face → Profile → Space → ⚙ Settings → Delete
