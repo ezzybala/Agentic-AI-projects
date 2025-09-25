@@ -57,15 +57,20 @@ From the career_conversation folder, run:
    GitHub Actions: No
 
 ###🔑 Secrets Management
+
 Enter secrets as key-value pairs during deployment:
-      OPENAI_API_KEY: sk-...
-      PUSHOVER_USER: u-...
-      PUSHOVER_TOKEN: a-...
+   OPENAI_API_KEY: sk-...
+   
+   PUSHOVER_USER: u-...
+   
+   PUSHOVER_TOKEN: a-...
+   
 Or manage them later on Hugging Face:
       
    Avatar → Profile → Select Space → ⚙ Settings → Variables & Secrets
 
 ### 🔄 Redeploy / Reset
+
    Delete the auto-generated README.md in the career_conversation folder before redeploying.
    
    To delete the Space:
