@@ -36,11 +36,8 @@
    uv tool install "huggingface_hub[cli]"
    hf auth login
    hf auth whoami
-Add your token to .env
+### Add your token to `.env`
 
-bash
-Copy code
-HF_TOKEN=hf_xxx
 Deploy your app
 From the 1_foundations folder, run:
 
