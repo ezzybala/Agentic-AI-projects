@@ -20,9 +20,6 @@
 2. Create an **Application/API Token** (name it e.g., *Agents*).  
 3. Add the following to your `.env` file:
 
-```bash
-PUSHOVER_USER=<your user key>
-PUSHOVER_TOKEN=<your app token>
 
 🚀 Deployment on Hugging Face Spaces
 
@@ -80,3 +77,4 @@ See a deployed example: Career Conversation Space
 Delete auto-generated README.md in the career_conversation folder before redeploying.
 
 To delete the Space: Hugging Face → Profile → Space → ⚙ Settings → Delete.
+
