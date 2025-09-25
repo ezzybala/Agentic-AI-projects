@@ -38,42 +38,37 @@
    hf auth whoami
 ### Add your token to `.env`
 
-Deploy your app
-From the 1_foundations folder, run:
+## Deploy your app
+From the career_conversation folder, run:
 
-bash
-Copy code
-uv run gradio deploy
-Follow the prompts:
+    ```bash
+   uv run gradio deploy
 
-Space name: career_conversation
+### Follow the prompts:
 
-Entry point: app.py
+   Space name: career_conversation
+   
+   Entry point: app.py
+   
+   Hardware: cpu-basic
+   
+   Secrets: Yes → add OPENAI_API_KEY, PUSHOVER_USER, PUSHOVER_TOKEN
+   
+   GitHub Actions: No
 
-Hardware: cpu-basic
-
-Secrets: Yes → add OPENAI_API_KEY, PUSHOVER_USER, PUSHOVER_TOKEN
-
-GitHub Actions: No
-
-🔑 Secrets Management
+###🔑 Secrets Management
 Enter secrets as key-value pairs during deployment:
+   OPENAI_API_KEY: sk-...
+   PUSHOVER_USER: u-...
+   PUSHOVER_TOKEN: a-...
+   Or manage them later on Hugging Face:
+   
+   Avatar → Profile → Select Space → ⚙ Settings → Variables & Secrets
 
-makefile
-Copy code
-OPENAI_API_KEY: sk-...
-PUSHOVER_USER: u-...
-PUSHOVER_TOKEN: a-...
-Or manage them later on Hugging Face:
 
-Avatar → Profile → Select Space → ⚙ Settings → Variables & Secrets
-
-✅ Example Space
-See a deployed example: Career Conversation Space
-
-🔄 Redeploy / Reset
-Delete the auto-generated README.md in the career_conversation folder before redeploying.
-
-To delete the Space:
-
-Hugging Face → Profile → Space → ⚙ Settings → Delete
+### 🔄 Redeploy / Reset
+   Delete the auto-generated README.md in the career_conversation folder before redeploying.
+   
+   To delete the Space:
+   
+   Hugging Face → Profile → Space → ⚙ Settings → Delete
