@@ -46,29 +46,29 @@ From the career_conversation folder, run:
 
 ### Follow the prompts:
 
-   Space name: career_conversation
-   
-   Entry point: app.py
-   
-   Hardware: cpu-basic
-   
-   Secrets: Yes → add OPENAI_API_KEY, PUSHOVER_USER, PUSHOVER_TOKEN
-   
-   GitHub Actions: No
+      Space name: career_conversation
+      
+      Entry point: app.py
+      
+      Hardware: cpu-basic
+      
+      Secrets: Yes → add OPENAI_API_KEY, PUSHOVER_USER, PUSHOVER_TOKEN
+      
+      GitHub Actions: No
 
 ###🔑 Secrets Management
-Enter secrets as key-value pairs during deployment:
-   OPENAI_API_KEY: sk-...
-   PUSHOVER_USER: u-...
-   PUSHOVER_TOKEN: a-...
-   Or manage them later on Hugging Face:
-   
-   Avatar → Profile → Select Space → ⚙ Settings → Variables & Secrets
+   Enter secrets as key-value pairs during deployment:
+      OPENAI_API_KEY: sk-...
+      PUSHOVER_USER: u-...
+      PUSHOVER_TOKEN: a-...
+      Or manage them later on Hugging Face:
+      
+      Avatar → Profile → Select Space → ⚙ Settings → Variables & Secrets
 
 
 ### 🔄 Redeploy / Reset
-   Delete the auto-generated README.md in the career_conversation folder before redeploying.
-   
-   To delete the Space:
-   
-   Hugging Face → Profile → Space → ⚙ Settings → Delete
+      Delete the auto-generated README.md in the career_conversation folder before redeploying.
+      
+      To delete the Space:
+      
+      Hugging Face → Profile → Space → ⚙ Settings → Delete
